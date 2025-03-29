@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+
+import { Label } from "./Label";  // Correct named import
+
 
 function App() {
-  return (
-    <div className="App">
+   return (
+       <div className="App">
 
-    </div>
-  );
+           <Label />
+       </div>
+   );
 }
+
 
 export default App;

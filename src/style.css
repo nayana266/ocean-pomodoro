@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Label positioning */
+.label {
+    height: auto;  /* Adjust height to fit content */
+    width: auto;   /* Adjust width to fit content */
+    position: absolute;
+    top: 5%;  /* Adjust the label slightly towards the top */
+    left: 50%; /* Center it horizontally using 50% */
+    transform: translateX(-50%); /* Offset the element by 50% of its width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Label text inside the wrapper */
+.label .text-wrapper {
+    color: #000000;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;  /* Ensure text stays in a single line */
+}
