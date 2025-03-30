@@ -1,6 +1,6 @@
 .timer {
     text-align: center;
-    font-family: "Press Start 2P", cursive;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
     color: white;
     background-color: black;
@@ -23,8 +23,8 @@
   }
   
   .hourglass {
-    max-width: 200px; 
-    max-height: 200px; 
+    max-width: 300px; 
+    max-height: 300px; 
     width: auto;
     height: auto;
     margin: 20px 0; 
@@ -34,7 +34,8 @@
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 5px;
+    border: 2px solid #132b6e;
     border-radius: 5px;
     background-color: #4CAF50;
     color: white;

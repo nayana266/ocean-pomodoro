@@ -15,38 +15,38 @@ function App() {
 
   const seashellStyle = {
     position: "absolute",
-    top: "50px", // Adjust as needed
-    right: "50px", // Adjust as needed
-    transform: "rotate(20deg)", 
+    top: "30px", // Adjust as needed
+    left: "1000px", // Adjust as needed
+    transform: "rotate(10deg)", 
     width: "300px",
     height: "300px",
   };
 
   const coralStyle = {
     position: "absolute",
-    top: "30%", // Adjust as needed
-    left: "20px", // Adjust as needed
-    transform: "rotate(250deg)", // Adjust rotation as needed
+    top: "23%", // Adjust as needed
+    left: "200px", // Adjust as needed
+    transform: "rotate(-10deg)", // Adjust rotation as needed
     width: "200px",
     height: "200px",
   };
 
   const coral2Style = {
     position: "absolute",
-    bottom: "30px", // Adjust as needed
-    right: "30px", // Adjust as needed
-    transform: "rotate(0deg)", // No rotation
-    width: "200px",
-    height: "200px",
+    top: "410px", // Adjust as needed
+    left: "1150px", // Adjust as needed
+    transform: "rotate(-5deg)", 
+    width: "180px",
+    height: "180px",
   };
 
   const starStyle = {
     position: "absolute",
-    bottom: "10px", // Adjust as needed
-    left: "10px", // Adjust as needed
-    transform: "rotate(305deg)", // Adjust rotation as needed
-    width: "100px",
-    height: "100px",
+    top: "410px", // Adjust as needed
+    left: "250px", // Adjust as needed
+    transform: "rotate(7deg)", // Adjust rotation as needed
+    width: "300px",
+    height: "300px",
   };
 
   return (
