@@ -13,7 +13,7 @@ body {
     height: auto;
     width: auto;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -25,11 +25,12 @@ body {
 .label .text-wrapper {
     color: #434778;
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 /* Image styling */
