@@ -9,11 +9,11 @@ function App() {
 
   const seashellStyle = {
     position: "absolute",
-    top: "30px", // Adjust as needed
-    left: "50px", // Adjust as needed
-    transform: "rotate(30deg)", // Adjust rotation as needed
-    width: "100px",
-    height: "100px",
+    top: "50px", // Adjust as needed
+    left: "100px", // Adjust as needed
+    transform: "rotate(20deg)", 
+    width: "200px",
+    height: "200px",
   };
 
   const coralStyle = {
@@ -21,8 +21,8 @@ function App() {
     top: "30%", // Adjust as needed
     left: "20px", // Adjust as needed
     transform: "rotate(250deg)", // Adjust rotation as needed
-    width: "100px",
-    height: "100px",
+    width: "200px",
+    height: "200px",
   };
 
   const coral2Style = {
