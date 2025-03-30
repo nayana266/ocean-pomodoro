@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import "./style.css";
 import { Label } from "./Label"; // Correct named import
 import Image from "./Image";
-import './App.css';
+
 
 function App() {
   return (
@@ -12,13 +12,6 @@ function App() {
       <div className="App">
         <Image />
         <Label />
-        <StartButton /> {/* StartButton component that handles navigation */}
-
-        {/* Define Routes inside Router */}
-        <Routes>
-          <Route path="/" element={<Home />} /> {/* Default route for the home page */}
-          <Route path="/newpage" element={<NewPage />} /> {/* Route to new page */}
-        </Routes>
       </div>
    
   );
