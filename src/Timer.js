@@ -2,11 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./Timer.css";
 import gsap from 'gsap';
 
+import Frame1 from './images/Frame1.png';
+import Frame2 from './images/Frame2.png';
+import Frame3 from './images/Frame3.png';
+import Frame4 from './images/Frame4.png';
+
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 minutes
   const [isRunning, setIsRunning] = useState(false);
   const [frameIndex, setFrameIndex] = useState(0);
-  const frames = ['Frame1.png', 'Frame2.png', 'Frame3.png', 'Frame4.png'];
+  const frames = [Frame1, Frame2, Frame3, Frame4];
 
   useEffect(() => {
     let timer;
