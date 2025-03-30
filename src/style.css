@@ -64,3 +64,15 @@ img {
 }
 
 /* Hover Effect */
+/* Make sure the content of NewPage isn't being hidden */
+.new-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    height: 100vh;
+}
+
+.new-page h1, .new-page p {
+    text-align: center;
+}

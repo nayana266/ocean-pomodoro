@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; // Correct import of useNavigate
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import "./style.css";
 import { Label } from "./Label"; // Correct named import
 import Image from "./Image";
@@ -23,7 +23,7 @@ function App() {
   );
 }
 
-// Home Page Component (Optional)
+// Home Page Component
 function Home() {
   return (
     <div>
