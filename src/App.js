@@ -7,18 +7,18 @@ import Timer from "./Timer"; // Assuming you have a Timer component
 
 function App() {
   const [start, setStart] = useState(false); // State to track the start button click
-  const [countdownFinished, setCountdownFinished] = useState(false); // Track when countdown finishes
-
-  const handleStartClick = () => {
-    console.log("Start button clicked!");
-    setStart(true); // Start the countdown when the button is clicked
-  };
 
   return (
     <div className="App">
       {/* Display the Image and Label components */}
       <Image />
       <Label />
+
+      {/* Adds seashell, coral, and star as decorations */}
+      <img src="/icons/blueshell.png" alt="Seashell" className="seashell" style= {seashellStyle} />
+      <img src="/icons/coral.png" alt="Coral1" className="coral" style={coralStyle}/>
+      <img src="/icons/pixelcoral.png" alt="Coral2" className="coral2" style={coral2Style}/>
+      <img src="/icons/star.png" alt="Star" className="star" style={starStyle}/>
 
       {/* Conditionally render the Timer component if the start state is true */}
       {start ? (
