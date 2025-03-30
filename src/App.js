@@ -7,14 +7,19 @@ import Timer from "./Timer"; // Assuming you have a Timer component
 
 function App() {
   const [start, setStart] = useState(false); // State to track the start button click
+  const [countdownFinished, setCountdownFinished] = useState(false);
+
+  const handleStartClick = () => {
+    setStart(true);
+  };
 
   const seashellStyle = {
     position: "absolute",
     top: "50px", // Adjust as needed
-    left: "100px", // Adjust as needed
+    right: "50px", // Adjust as needed
     transform: "rotate(20deg)", 
-    width: "200px",
-    height: "200px",
+    width: "300px",
+    height: "300px",
   };
 
   const coralStyle = {
@@ -28,11 +33,11 @@ function App() {
 
   const coral2Style = {
     position: "absolute",
-    bottom: "10px", // Adjust as needed
-    right: "10px", // Adjust as needed
+    bottom: "30px", // Adjust as needed
+    right: "30px", // Adjust as needed
     transform: "rotate(0deg)", // No rotation
-    width: "100px",
-    height: "100px",
+    width: "200px",
+    height: "200px",
   };
 
   const starStyle = {
