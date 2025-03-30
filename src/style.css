@@ -45,9 +45,9 @@ img {
     border-radius: 8px;
 }
 
-
 /* Start Button Styling */
 .start-button {
+    font-family: "Pixelify Sans", sans-serif;
     background-color: #6D92B8;  /* Button color */
     color: white;
     padding: 15px 30px;
@@ -63,3 +63,27 @@ img {
     transform: translateX(-50%);  /* Center it with respect to its own width */
     z-index: 10;  /* Make sure it's on top */
 }
+
+/* Countdown container styling */
+.countdown-container {
+    background-color: #6c89b5;
+    padding: 20px 40px;
+    border-radius: 15px;
+    display: inline-block;
+    font-family: 'Press Start 2P', sans-serif; /* Use a pixelated font */
+    position: absolute;
+    bottom: 5%; /* Moves countdown near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    z-index: 5; /* Keep it above background but below other elements */
+}
+
+/* In your style.css or Countdown-specific CSS file */
+.countdown {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 5rem; /* Adjust font size */
+    color: #fff; /* Change text color as needed */
+    text-align: center; /* Center the text if needed */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
