@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import "./style.css";
 import { Label } from "./Label"; // Correct named import
 import Image from "./Image";
+import Timer from "./Timer";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Image />
         <Label />
+        <Timer /> 
       </div>
    
   );
