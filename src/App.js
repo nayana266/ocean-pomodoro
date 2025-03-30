@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import React from "react";
-=======
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
->>>>>>> dccec48b2652a9c7f1cd182649099aa5fd43dcda
 import "./style.css";
 import { Label } from "./Label"; // Correct named import
 import Image from "./Image";
