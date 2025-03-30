@@ -22,7 +22,7 @@ body {
 
 /* Label text inside the wrapper */
 .label .text-wrapper {
-    color: #000000;
+    color: #434778;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 38px;
     font-weight: 400;
@@ -30,3 +30,16 @@ body {
     line-height: normal;
     white-space: nowrap;  /* Ensure text stays in a single line */
 }
+
+/* Image styling */
+img {
+    position: absolute;  /* Position the image absolutely relative to the body */
+    top: 56%;            /* Move the image down by 50% of the container's height */
+    left: 50%;           /* Move the image right by 50% of the container's width */
+    transform: translate(-50%, -50%);  /* Adjust the position to truly center it */
+    max-width: 60%;      /* Limit the image width to 40% of the container */
+    height: auto;        /* Keep the aspect ratio intact */
+    border: 4px solid #8399C1;  /* Adds a purple border with the color #8399C1 */
+    border-radius: 8px;  /* Optional: adds rounded corners */
+}
+
