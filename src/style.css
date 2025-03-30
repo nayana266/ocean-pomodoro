@@ -1,3 +1,4 @@
+/* Body setup */
 body {
     display: flex;
     justify-content: center;
@@ -9,12 +10,12 @@ body {
 
 /* Label positioning */
 .label {
-    height: auto;  /* Adjust height to fit content */
-    width: auto;   /* Adjust width to fit content */
+    height: auto;
+    width: auto;
     position: absolute;
-    top: 5%;  /* Adjust the label slightly towards the top */
-    left: 50%; /* Center it horizontally using 50% */
-    transform: translateX(-50%); /* Offset the element by 50% of its width */
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,18 +29,38 @@ body {
     font-weight: 400;
     letter-spacing: 0;
     line-height: normal;
-    white-space: nowrap;  /* Ensure text stays in a single line */
+    white-space: nowrap;
 }
 
 /* Image styling */
 img {
-    position: absolute;  /* Position the image absolutely relative to the body */
-    top: 56%;            /* Move the image down by 50% of the container's height */
-    left: 50%;           /* Move the image right by 50% of the container's width */
-    transform: translate(-50%, -50%);  /* Adjust the position to truly center it */
-    max-width: 60%;      /* Limit the image width to 40% of the container */
-    height: auto;        /* Keep the aspect ratio intact */
-    border: 4px solid #8399C1;  /* Adds a purple border with the color #8399C1 */
-    border-radius: 8px;  /* Optional: adds rounded corners */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;  /* Increase the width */
+    height: 90%; /* Stretch the height */
+    object-fit: cover;  /* Keeps the image visually stretched */
+    border: 4px solid #8399C1;
+    border-radius: 8px;
 }
 
+/* Start Button Styling */
+.start-button {
+    background-color: #6D92B8;  /* Button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;  /* Position it 10% from the bottom */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Center it with respect to its own width */
+    z-index: 10;  /* Make sure it's on top */
+}
+
+/* Hover Effect */
