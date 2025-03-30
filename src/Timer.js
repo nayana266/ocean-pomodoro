@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Timer.css";
+import gsap from 'gsap';
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 minutes
   const [isRunning, setIsRunning] = useState(false);
+  const [frameIndex, setFrameIndex] = useState(0);
+  const frames = ['Frame1.png', 'Frame2.png', 'Frame3.png', 'Frame4.png'];
 
   useEffect(() => {
     let timer;
@@ -15,10 +18,26 @@ const Timer = () => {
     return () => clearInterval(timer);
   }, [isRunning, timeLeft]);
 
+  useEffect(() => {
+    if (timeLeft <= 0) {
+        setFrameIndex(3);
+    } else if (timeLeft > 0 && timeLeft <= 3) {
+        setFrameIndex(0);
+    } else {
+        const interval = setInterval(() => {
+            setFrameIndex((prev) => (prev === 1 ? 2 : 1));
+        }, 1250);
+
+        return() => clearInterval(interval);
+    }
+ }, [timeLeft]);
+
+
   const toggleTimer = () => setIsRunning(!isRunning);
   const resetTimer = () => {
     setIsRunning(false);
     setTimeLeft(25 * 60);
+    setFrameIndex(0);
   };
 
   const formatTime = (seconds) => {
@@ -30,6 +49,7 @@ const Timer = () => {
   return (
     <div className="timer">
       <h1>{formatTime(timeLeft)}</h1>
+      <img src={frames[frameIndex]} alt="Hourglass" className="hourglass" />
       <button onClick={toggleTimer}>{isRunning ? "Pause" : "Start"}</button>
       <button onClick={resetTimer}>Reset</button>
     </div>
