@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Timer.css";
-import gsap from 'gsap';
+import CountdownButton from './CountdownButton';
 
 import Frame1 from './images/Frame1.png';
 import Frame2 from './images/Frame2.png';
@@ -12,6 +12,16 @@ const Timer = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [frameIndex, setFrameIndex] = useState(0);
   const frames = [Frame1, Frame2, Frame3, Frame4];
+
+  const toggleTimer = () => {
+    setIsRunning((prevState) => !prevState); 
+  };
+
+  const resetTimer = () => {
+    setIsRunning(false);
+    setTimeLeft(25 * 60);
+    setFrameIndex(0);
+  };
 
   useEffect(() => {
     let timer;
@@ -37,14 +47,6 @@ const Timer = () => {
     }
  }, [timeLeft]);
 
-
-  const toggleTimer = () => setIsRunning(!isRunning);
-  const resetTimer = () => {
-    setIsRunning(false);
-    setTimeLeft(25 * 60);
-    setFrameIndex(0);
-  };
-
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
@@ -55,7 +57,7 @@ const Timer = () => {
     <div className="timer">
       <h1>{formatTime(timeLeft)}</h1>
       <img src={frames[frameIndex]} alt="Hourglass" className="hourglass" />
-      <button onClick={toggleTimer}>{isRunning ? "Pause" : "Start"}</button>
+      <CountdownButton toggleTimer={toggleTimer} isRunning={isRunning} />
       <button onClick={resetTimer}>Reset</button>
     </div>
   );

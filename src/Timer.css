@@ -18,16 +18,16 @@
   }
 
   .timer h1 {
-    font-size: 2rem; /* Makes the time text smaller */
-    margin-bottom: 20px; /* Adds space between the time text and the image */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
   }
   
   .hourglass {
-    max-width: 200px; /* Limits the width of the hourglass image */
-    max-height: 200px; /* Limits the height of the hourglass image */
+    max-width: 200px; 
+    max-height: 200px; 
     width: auto;
     height: auto;
-    margin: 20px 0; /* Adds space around the image */
+    margin: 20px 0; 
   }
   
   button {
@@ -42,7 +42,7 @@
   }
   
   button:hover {
-    background-color: #45a049; /* Darkens button color when hovered */
+    background-color: #566c9b; /* Darkens button color when hovered */
   }
   
   
