@@ -50,13 +50,16 @@ function StartButton() {
 
 // NewPage Component - Content shown when '/newpage' is visited
 function NewPage() {
-  console.log('Rendering NewPage'); // This will help you check if the component is mounted
+  console.log('NewPage is being rendered');
   return (
-    <div>
+    <div className="new-page">
       <h1>Welcome to the New Page!</h1>
       <p>This is the content of the new page!</p>
     </div>
   );
 }
+
+
+
 
 export default App;
