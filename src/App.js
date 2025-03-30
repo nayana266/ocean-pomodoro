@@ -3,6 +3,9 @@ import React from "react";
 
 import { Label } from "./Label";  // Correct named import
 
+import logo from './logo.svg';
+import Timer from "./Timer";
+import './App.css';
 
 function App() {
    return (
@@ -11,6 +14,12 @@ function App() {
            <Label />
        </div>
    );
+  return (
+    <div className="App">
+      <h1>Pixel Pomodoro</h1>
+      <Timer /> 
+    </div>
+  );
 }
 
 
